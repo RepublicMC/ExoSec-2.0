@@ -1,0 +1,64 @@
+#		
+#		////////	//    //	////////		////////	////////	//////// 
+#		//			//	  //	//	  //		//			//			//		
+#		//			  ////		//	  //		//			//			//		
+#		////////	 //////		//	  //		////////	////////	//		
+#		//			  ////		//	  //			  //	//			//		
+#		//			//    //	//	  //			  //	//			//		
+#		////////	//    //	////////		////////	////////	////////
+#		
+#       Authors │ RepublicMC and SkillsAura
+#		Version │ Beta 2.0
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+function generateFile(dl: text, dir: text):
+	download "%{_dl}%" to "%{_dir}%"
+	
+function getConfig(t: text) :: text:
+	set {_%{_t}%} to colored single value "Plugin.%{_t}%" get of "plugins/ExoSec/config.yml"
+	return {_%{_t}%}
+	
+function sendConsole(t: text):
+	set {_p} to getConfig("Plugin.Prefix")
+	send "%{_p}% &f%{_t}%"
+
+
+
+
+
+on script load:
+	if folder "plugins/ExoSec" doesn't exists:
+		create folder "plugins/ExoSec"
+		create folder "plugins/ExoSec/logs"
+		
+		create file "plugins/ExoSec/config.yml"
+		create file "plugins/ExoSec/checks.yml"
+		create file "plugins/ExoSec/lang.properties"
+		
+		create folder "plugins/ExoSec/Advanced"
+		
+		create file "plugins/ExoSec/Advanced/Leniency.yml"
+		create file "plugins/ExoSec/Advanced/Determination.yml"
+		create file "plugins/ExoSec/Advanced/Sanctions.yml"
+		
+		generateFile("", "")
+		generateFile("", "")
+		generateFile("", "")
+		
+		generateFile("", "")
+		generateFile("", "")
+		generateFile("", "")
+		
+		sendConsole("Generated all configuration files")
