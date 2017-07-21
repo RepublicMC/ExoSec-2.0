@@ -1,0 +1,34 @@
+#		////////	//		//	////////			│
+#		//				//		//	//		//			│	Configuration File
+#		////////		////		//		//			│	Version: Build #00001A
+#		//				//		//	//		//			│
+#		////////	//		//	////////			│
+
+
+# Plugin Settings: Here you can configure the prefix, the updater and the plugin directory.
+
+Plugin:
+ Prefix: '&5[&aExo&dSec&5]'
+ Updater:
+ 
+  # This checks for updates, you can enable/disable this.
+  Use: true
+	
+	# Alerts players with "OP" permissions when an update is found.
+	AlertOPs: true
+	
+# Version: Changing this may result in the plugin breaking.
+Version: 1.0
+
+
+# Further configuration can be found in the following directories/files:
+
+# "plugins/ExoSec/checks.yml"
+# "plugins/ExoSec/lang.properties"
+# "plugins/ExoSec/Advanced/Leniency.yml"
+# "plugins/ExoSec/Advanced/Determination.yml"
+# "plugins/ExoSec/Advanced/Sanctions.yml"
+
+
+
+# ----------------------------------- End of configuration ----------------------------------- #
