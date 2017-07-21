@@ -10,13 +10,12 @@
 Plugin:
  Prefix: '&5[&aExo&dSec&5]'
  Updater:
- 
   # This checks for updates, you can enable/disable this.
   Use: true
-	
-	# Alerts players with "OP" permissions when an update is found.
-	AlertOPs: true
-	
+  
+  # Alerts players with "OP" permissions when an update is found.
+  AlertOPs: true
+
 # Version: Changing this may result in the plugin breaking.
 Version: 1.0
 
